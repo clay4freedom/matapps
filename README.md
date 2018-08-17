@@ -14,8 +14,8 @@ Simple Mathematics App
 - Menambahkan fitur "bilangan segitiga"
 - perubahan readme.md
 - Fitur Bilangan genap v2 sementara di hilangkan
-====== Penjelasan logika dari masing" fitur
-###Bilangan Prima
+======Penjelasan logika dari masing" fitur======
+Bilangan Prima
 - Pertama menentukan bilangan awal dan akhir
 - for pertama digunaan untuk menentukan range 
 - prima = True , baris tersebut menyatakan suatu nilai yang berarti semua nilai dianggap bilangan prima
