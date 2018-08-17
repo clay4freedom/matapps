@@ -17,6 +17,9 @@ Simple Mathematics App
 ---
 ### Penjelasan logika dari masing - masing fitur
 ## Bilangan Prima
+### Pengertian :
+- adalah suatu bilangan asli yang lebih besar dari angka 1, yang hanya dapat dibagi dengan angka 1 dan bilangan itu sendiri.
+### Logikanya :
 - Pertama menentukan bilangan awal dan akhir
 - for pertama digunaan untuk menentukan range 
 - prima = True , baris tersebut menyatakan suatu nilai yang berarti semua nilai dianggap bilangan prima
@@ -25,13 +28,22 @@ Simple Mathematics App
 - if i==1:, digunakan untuk menghapus angka 1 dari output
 - if prima==True:, digunakan jika nilai prima = True maka tampilkan hasilnya
 ---
-## Bilangan Genap
+## Bilangan Ganjil Genap
+### Pengertian :
+#### Bilangan Ganjil
+- adalah suatu bilangan bulat dimana bilangan bulat tersebut tidak habis dibagi dengan 2
+#### Bilangan Genap
+- adalah suatu bilangan bulat dimana bilangan bulat tersebut habis dibagi dengan 2
+### Logikanya :
 - baris pertama menentukan nilai dari variabel a
 - baris kedua digunakan untuk menentukan :
 - jika a modulus 2 = 0, maka akan menampilkan hasil bilangan genap
 - jika a modulus 2 bukan = 0, maka akan menampilkan hasil bilangan ganjil
 ---
-## bilangan segitiga
+## Bilangan Segitiga
+### Pengertian :
+- suatu barisan bilangan yang membentuk sebuah pola bilangan segitiga
+### Logikanya :
 - Menentukan nilai dari variabel a dan b
 - for i in range (2,b+2):, menentukan perulangan agar perulangannya sama dengan nilai dari variabel b
 - print digunakan untuk menampilkan hasil dari variabel a
