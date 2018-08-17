@@ -1,4 +1,6 @@
-from Prima import mainprog
+from Bin.Prima import mainprog
+from Bin.Genap import ganjilgenap
+from Bin.Trian import trianprog
 from Info import infoprog
 import os
 
@@ -14,23 +16,26 @@ def main():
 	print("|==========M E N U===========|")
 	print("==============================")
 	print("|[1] Bilangan Prima          |")
-	print("|[2] Bilangan Genap          |")
-	print("|[3] Bilangan Genap v2       |")
-	print("|[4] Bilangan Ganjil         |")
-	print("|[5] Bilangan Ganjil v2      |")
-	print("|[6] Info                    |")
-	print("|[7] Exit                    |")
+	print("|[2] Bilangan Ganjil Genap   |")
+	print("|[3] Bilangan Segitiga       |")
+	print("|[4] Info                    |")
+	print("|[5] Exit                    |")
 	print("==============================")
 	print("==============================")
 	choose = int(input("|Input : "))
 	print("==============================")
 	if choose ==1:
 		bilprima()
-	elif choose ==7:
+	elif choose ==2:
+		os.system('cls')
+		bilgangen()
+	elif choose ==5:
 		os.system('cls')
 		quit()
-	elif choose ==6:
+	elif choose ==4:
 		help()
+	elif choose ==3:
+		bilseg()
 	
 def bilprima():
 	os.system('cls')
@@ -58,6 +63,36 @@ def help():
 	print("|========Program Info========|")
 	print("|                            |")
 	infoprog()
+	input("   Press Enter to Continue!   ")
+	
+def bilgangen():
+	os.system('cls')
+	print("|============================|")
+	print("|  Program Bil. Ganjil Genap |")
+	print("|============================|")
+	print("|                            |")
+	a = int(input("|Masukkan Angka: "))
+	print("|============================|")
+	ganjilgenap(a)
+	input("   Press Enter to Continue!   ")
+	
+def bilseg():
+	os.system('cls')
+	print("|============================|")
+	print("|   Program Bil. Segitiga    |")
+	print("|============================|")
+	print("|                            |")
+	print("|Masukkan Digit")
+	a = int(input("*Ex 3 : "))
+	print("|============================|")
+	trianprog(a)
+	print("|============================|")
+	print("Ket:")
+	print(">> [1] adalah Digit/Barisnya")
+	print()
+	print(">> Sebelah kanan adalah hasil")
+	print("  dari bilangan segitiga")
+	print("|============================|")
 	input("   Press Enter to Continue!   ")
 	
 if __name__ == "__main__":
