@@ -1,6 +1,5 @@
 def trianprog(digit):
-	a = 1
-	b = digit
-	for i in range (2,b+2):
-		print ("["+str(i-1)+"]",a)
-		a = a + i
+	i = 0
+	for j in range (1, digit+1):
+		i += j
+		print ("[" + str(j) + "]", i)

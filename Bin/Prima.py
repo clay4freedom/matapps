@@ -1,13 +1,9 @@
 def mainprog(awal, akhir):
-	a = awal
-	b = akhir
-	for i in range (a,b+1):
+	for i in range(awal, akhir+1):
 		prima = True
-		for a in range (2,i):
-			if i%a ==0:
+		for j in range(2, (i/2)+1):
+			if i % j == 0:
 				prima = False
-		if i ==1:
-			prima = False
-		
-		if prima ==True:
-			print("|"+str(i),end='| ')
+				break
+		if prima == True and i != 1:
+			print("|" + str(i)+ '| ')
