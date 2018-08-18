@@ -6,7 +6,6 @@ def mainprog(awal, akhir):
 		for a in range (2,i):
 			if i%a ==0:
 				prima = False
-		
 		if i ==1:
 			prima = False
 		
